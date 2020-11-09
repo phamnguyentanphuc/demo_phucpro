@@ -6,6 +6,8 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+
+
 public class Cach1 extends Thread {
 	public static boolean isLoading = true;
 	public static Scanner scanner = new Scanner(System.in);
@@ -29,6 +31,8 @@ public class Cach1 extends Thread {
 
 	public static void main(String[] args) throws InterruptedException {
 
+		
+
 		boolean abc = true;
 		while (abc) {
 			java.awt.event.KeyEvent key;
@@ -42,8 +46,8 @@ public class Cach1 extends Thread {
 				isLoading = false;
 				System.out.println("pause video");
 
-				t.resume(); 
-			
+				t.stop();
+
 			}
 
 			String b = scanner.nextLine();
